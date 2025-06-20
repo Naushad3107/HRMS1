@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HR.master.cs" Inherits="HRMS.Hr.HR" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <h2 style="text-align: center">HR Portal</h2>
+
+
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="HrBasePage.aspx">HRMS</a>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="HrBasePage.aspx">Home</a>
+                            </li>
+
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Employee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Letter
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../Offer_Relieving_code/GenerateOfferLetter.aspx">Generate Offer Letter</a></li>
+                                    <li><a class="dropdown-item" href="../Offer_Relieving_code/Relieving.aspx">Generate Relieving Letter</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPayslips" role="button" data-bs-toggle="dropdown" aria-expanded="false">Payslips</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownPayslips">
+
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown">Salary Management</a>
+                                        <ul class="dropdown-submenu">
+                                            <li><a class="dropdown-item" href="../Payslips/AddDeduction.aspx">Add deduction type</a></li>
+                                            <li><a class="dropdown-item" href="../Payslips/AddEarning.aspx">Add Earning Type</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../Payslips/PayslipGenerate.aspx">Payslip Generation</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="../Payslips/SalaryCalculation.aspx">Calculate Salary</a></li>
+                                </ul>
+                            </li>
+                    </div>
+
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownUser"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Naushad</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUser">
+                                <li><a class="dropdown-item" href="MyProfile.aspx">My Profile</a></li>
+                                <li><a class="dropdown-item" href="Settings.aspx">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" style="color: red" href="LoginPage.aspx">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+
+
+
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+    </form>
+</body>
+
+
+</html>
