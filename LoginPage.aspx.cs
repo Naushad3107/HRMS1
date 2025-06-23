@@ -56,7 +56,7 @@ namespace HRMS
                                 Response.Redirect("HrBasePage.aspx");
                                 break;
                             case "Manager":
-                                Response.Redirect("Manager.aspx");
+                                Response.Redirect("Manager/ManagerHome.aspx");
                                 break;
                             default:
                                 Response.Redirect("AccessDenied.aspx");

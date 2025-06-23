@@ -25,7 +25,6 @@
         <form>
 
 
-          <!-- Email input -->
           <div data-mdb-input-init class="form-outline mb-4">
               <h2 style="text-align:center">HRMS</h2>
               <p style="text-align:center">&nbsp;</p>
@@ -33,7 +32,6 @@
             Username :&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
           </div>
 
-          <!-- Password input -->
           <h3></h3> Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 
           <div class="d-flex justify-content-between align-items-center">

@@ -18,51 +18,47 @@
 
             <h1 style="text-align: center">Employee Portal</h1>
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="EmpPageBase.aspx">HRMS</a>
+                    <a class="navbar-brand" href="../EmpPageBase.aspx">HRMS</a>
 
 
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="EmpPageBase.aspx">Home</a>
+                                <a class="nav-link active" aria-current="page" href="../EmpPageBase.aspx">Home</a>
                             </li>
 
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Emp" role="button" data-bs-toggle="dropdown" aria-expanded="false">My Profile
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="ViewEmpDetails.aspx">My Profile</a></li>
-                                    <li><a class="dropdown-item" style="color: red" href="LoginPage.aspx">Logout</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
 
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Attendence" role="button" data-bs-toggle="dropdown" aria-expanded="false">Attendence
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="TimeSheet.aspx">Time Sheet</a></li>
-                                    <li><a class="dropdown-item" href="Leaves.aspx">Leaves</a></li>
+                                    <li><a class="dropdown-item" href="../Employee/TimeSheet.aspx">Time Sheet</a></li>
+             
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
 
 
 
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Attendence" role="button" data-bs-toggle="dropdown" aria-expanded="false">Leaves
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../Employee/ApplyLeave.aspx">Apply Leave</a></li>
+                                    <li><a class="dropdown-item" href="../Employee/LeaveHistory.aspx">Leave History</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
                             </li>
+
 
                         </ul>
                     </div>
@@ -72,15 +68,14 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownUser"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>Naushad</span>
+                                <span><%= Session["User"] %></span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUser">
-                                <li><a class="dropdown-item" href="MyProfile.aspx">My Profile</a></li>
-                                <li><a class="dropdown-item" href="Settings.aspx">Settings</a></li>
+                                <li><a class="dropdown-item" href="../Employee/ViewEmpDetails.aspx">My Profile</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" style="color: red" href="LoginPage.aspx">Logout</a></li>
+                                <li><a class="dropdown-item" style="color: red" href="../LoginPage.aspx">Logout</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Task2
+{
+    public partial class Department : System.Web.UI.Page
+    {
+        SqlConnection conn;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            string cnf = ConfigurationManager.ConnectionStrings["task2"].ConnectionString;
+            conn = new SqlConnection(cnf);
+            conn.Open();
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string Dname, DStatus;
+            Dname = TextBox2.Text;
+            DStatus = DropDownList1.SelectedValue;
+            string q = $"exec InsertDept '{Dname}','{DStatus}'";
+            SqlCommand cmd = new SqlCommand(q,conn);
+            cmd.ExecuteNonQuery();
+            Response.Write("<script>alert('Department Added Successfully!!!')</script>");
+        }
+    }
+}

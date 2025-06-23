@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EmployeePerformanceDashboard.aspx.cs" Inherits="HRMS.EmployeePerformanceDashboard" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Hr/HR.Master" AutoEventWireup="true" CodeBehind="EmployeePerformanceDashboard.aspx.cs" Inherits="HRMS.EmployeePerformanceDashboard" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Employee Performance Dashboard</title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -24,11 +20,10 @@
             font-size: 18px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div class="container my-4">
+</asp:Content>
 
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="container my-5">
         <div class="card shadow p-4 mb-4">
             <h2 class="mb-3 text-primary">Employee Performance Dashboard</h2>
 
@@ -46,19 +41,21 @@
             </div>
         </div>
 
-        <!-- Chart Section -->
+
+
         <div class="card shadow mb-4 p-4">
             <h4 class="mb-3 text-secondary">📊 Performance Chart</h4>
             <canvas id="scoreChart" height="300"></canvas>
             <asp:Literal ID="litChartScript" runat="server" />
         </div>
 
-        <!-- Heatmap Section -->
+
+
         <div class="card shadow mb-4 p-4">
             <h4 class="mb-3 text-secondary">🟥 Performance Heatmap</h4>
-            <asp:GridView ID="gvHeatmap" runat="server" AutoGenerateColumns="False" 
-                          OnRowDataBound="gvHeatmap_RowDataBound" 
-                          CssClass="table table-bordered table-striped">
+            <asp:GridView ID="gvHeatmap" runat="server" AutoGenerateColumns="False"
+                          OnRowDataBound="gvHeatmap_RowDataBound"
+                          CssClass="table table-bordered table-striped text-center">
                 <Columns>
                     <asp:BoundField DataField="ReviewPeriod" HeaderText="Review Period" />
                     <asp:BoundField DataField="AverageScore" HeaderText="Score" />
@@ -71,7 +68,8 @@
             </asp:GridView>
         </div>
 
-        <!-- Progress Bars Section -->
+
+
         <div class="card shadow mb-4 p-4">
             <h4 class="mb-3 text-secondary">📈 Performance as Progress Bars</h4>
             <asp:Repeater ID="rptProgress" runat="server">
@@ -89,21 +87,20 @@
             </asp:Repeater>
         </div>
 
-        <!-- Circular Dials Section -->
+
+
         <div class="card shadow mb-4 p-4">
             <h4 class="mb-3 text-secondary">🎯 Performance Dials</h4>
             <div class="d-flex flex-wrap gap-4">
                 <asp:Repeater ID="rptDials" runat="server">
                     <ItemTemplate>
-                        <div class="dial d-flex align-items-center justify-content-center" style='<%# GetDialStyle(Eval("AverageScore")) %>'>
+                        <div class="dial d-flex align-items-center justify-content-center"
+                             style='<%# GetDialStyle(Eval("AverageScore")) %>'>
                             <div class="value"><%# Eval("AverageScore") %></div>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
             </div>
         </div>
-
     </div>
-    </form>
-</body>
-</html>
+</asp:Content>

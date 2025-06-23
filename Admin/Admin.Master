@@ -19,9 +19,9 @@
             <h1 style="text-align: center;">Admin Portal</h1>
 
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="AdminPage.aspx">HRMS</a>
+                    <a class="navbar-brand">HRMS</a>
 
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="AdminPage.aspx">Home</a>
+                                <a class="nav-link active" aria-current="page" href="../AdminPage.aspx">Home</a>
                             </li>
 
 
@@ -41,12 +41,11 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Employee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Employee
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="AllEmpData.aspx">All Employees</a></li>
-                                    <li><a class="dropdown-item" href="AddEmp.aspx">Add Employee</a></li>
+                                    <li><a class="dropdown-item" href="../AllEmpData.aspx">All Employees</a></li>
+                                    <li><a class="dropdown-item" href="../AddEmp.aspx">Add Employee</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
 
@@ -55,14 +54,46 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Department" role="button" data-bs-toggle="dropdown" aria-expanded="false">Department
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="AddDeptForm.aspx">Add Department</a></li>
-                                    <li><a class="dropdown-item" href="ViewActiveDept.aspx">View Active Departments</a></li>
+                                    <li><a class="dropdown-item" href="../AddDeptForm.aspx">Add Department</a></li>
+                                    <li><a class="dropdown-item" href="../ViewActiveDept.aspx">View Active Departments</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Employee" role="button" data-bs-toggle="dropdown" aria-expanded="false">Training
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../TrainingModule/AddTrainer.aspx">Add New Trainer</a></li>
+                                    <li><a class="dropdown-item" href="../TrainingModule/AddTrainingType.aspx/">Training Type</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-EmployeeHoliday" role="button" data-bs-toggle="dropdown" aria-expanded="false">Holidays
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/Admin/AddHolidays.aspx">Add Holidays</a></li>
+
+                                    
+
+                                </ul>
+                            </li>
+
+
+
+
 
 
                         </ul>
@@ -71,15 +102,14 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="navbarDropdownUser"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span>Naushad</span>
+                                    <span><%= Session["User"] %></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownUser">
-                                    <li><a class="dropdown-item" href="MyProfile.aspx">My Profile</a></li>
-                                    <li><a class="dropdown-item" href="Settings.aspx">Settings</a></li>
+                                    <li><a class="dropdown-item" href="../Admin/ViewEmpDetailsAdmin.aspx">My Profile</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" style="color:red" href="LoginPage.aspx">Logout</a></li>
+                                    <li><a class="dropdown-item" style="color: red" href="../LoginPage.aspx">Logout</a></li>
                                 </ul>
                             </li>
                         </ul>

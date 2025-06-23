@@ -50,6 +50,7 @@
       <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,16 +75,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddDeptForm.aspx" />
+    <Content Include="Admin\AddHolidays.aspx" />
+    <Content Include="Admin\ViewEmpdetailsAdmin.aspx" />
     <Content Include="AllEmpData.aspx" />
     <Content Include="AppraisalTemplate.aspx" />
     <Content Include="AppraiseEmployee.aspx" />
     <Content Include="EmployeePerformanceDashboard.aspx" />
+    <Content Include="Employee\ApplyLeave.aspx" />
+    <Content Include="Employee\LeaveHistory.aspx" />
+    <Content Include="Hr\ViewDetailsHR.aspx" />
     <Content Include="EmpPageBase.aspx" />
     <Content Include="HrBasePage.aspx" />
     <Content Include="Images\DefaultDept.jpg" />
     <Content Include="Images\DefaultEmp.jpg" />
     <Content Include="Images\EmpBase.jpg" />
     <Content Include="LoginPage.aspx" />
+    <Content Include="Manager\AddLeaves.aspx" />
+    <Content Include="Manager\ApproveLeave.aspx" />
+    <Content Include="Manager\ManagerHome.aspx" />
+    <Content Include="Manager\ViewEmpdetailsManager.aspx" />
     <Content Include="Offer_Relieving_code\GenerateOfferLetter.aspx" />
     <Content Include="Offer_Relieving_code\Relieving.aspx" />
     <Content Include="Payslips\AddDeduction.aspx" />
@@ -93,10 +103,16 @@
     <Content Include="Payslips\PayslipGenerate.aspx" />
     <Content Include="Payslips\SalaryCalculation.aspx" />
     <Content Include="PerfmTrackByDept.aspx" />
-    <Content Include="TimeSheet.aspx" />
+    <Content Include="Employee\TimeSheet.aspx" />
+    <Content Include="trainerimage\temp.txt" />
+    <Content Include="trainerimage\WhatsApp Image 2025-06-17 at 3.58.22 PM.jpeg" />
+    <Content Include="TrainingModule\AddTrainer.aspx" />
+    <Content Include="TrainingModule\AddTrainingList.aspx" />
+    <Content Include="TrainingModule\AddTrainingType.aspx" />
+    <Content Include="TrainingModule\TrainingPage.aspx" />
     <Content Include="UpdateEmpDetails.aspx" />
     <Content Include="ViewActiveDept.aspx" />
-    <Content Include="ViewEmpdetails.aspx" />
+    <Content Include="Employee\ViewEmpdetails.aspx" />
     <Content Include="Web.config" />
     <Content Include="AdminPage.aspx" />
     <Content Include="AddEmp.aspx" />
@@ -109,12 +125,26 @@
     <Compile Include="AddDeptForm.aspx.designer.cs">
       <DependentUpon>AddDeptForm.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AddHolidays.aspx.cs">
+      <DependentUpon>AddHolidays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddHolidays.aspx.designer.cs">
+      <DependentUpon>AddHolidays.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewEmpdetailsAdmin.aspx.cs">
+      <DependentUpon>ViewEmpdetailsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewEmpdetailsAdmin.aspx.designer.cs">
+      <DependentUpon>ViewEmpdetailsAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="AllEmpData.aspx.cs">
       <DependentUpon>AllEmpData.aspx</DependentUpon>
@@ -144,12 +174,33 @@
     <Compile Include="EmployeePerformanceDashboard.aspx.designer.cs">
       <DependentUpon>EmployeePerformanceDashboard.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employee\ApplyLeave.aspx.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\ApplyLeave.aspx.designer.cs">
+      <DependentUpon>ApplyLeave.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Employee\Employee.Master.cs">
       <DependentUpon>Employee.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Employee\Employee.Master.designer.cs">
       <DependentUpon>Employee.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\LeaveHistory.aspx.cs">
+      <DependentUpon>LeaveHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\LeaveHistory.aspx.designer.cs">
+      <DependentUpon>LeaveHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hr\ViewDetailsHR.aspx.cs">
+      <DependentUpon>ViewDetailsHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hr\ViewDetailsHR.aspx.designer.cs">
+      <DependentUpon>ViewDetailsHR.aspx</DependentUpon>
     </Compile>
     <Compile Include="EmpPageBase.aspx.cs">
       <DependentUpon>EmpPageBase.aspx</DependentUpon>
@@ -178,6 +229,41 @@
     </Compile>
     <Compile Include="LoginPage.aspx.designer.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\AddLeaves.aspx.cs">
+      <DependentUpon>AddLeaves.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\AddLeaves.aspx.designer.cs">
+      <DependentUpon>AddLeaves.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ApproveLeave.aspx.cs">
+      <DependentUpon>ApproveLeave.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\ApproveLeave.aspx.designer.cs">
+      <DependentUpon>ApproveLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Manager.Master.cs">
+      <DependentUpon>Manager.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\Manager.Master.designer.cs">
+      <DependentUpon>Manager.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ManagerHome.aspx.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\ManagerHome.aspx.designer.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\ViewEmpdetailsManager.aspx.cs">
+      <DependentUpon>ViewEmpdetailsManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manager\ViewEmpdetailsManager.aspx.designer.cs">
+      <DependentUpon>ViewEmpdetailsManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Offer_Relieving_code\GenerateOfferLetter.aspx.cs">
       <DependentUpon>GenerateOfferLetter.aspx</DependentUpon>
@@ -257,12 +343,40 @@
     <Compile Include="AddEmp.aspx.designer.cs">
       <DependentUpon>AddEmp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TimeSheet.aspx.cs">
+    <Compile Include="Employee\TimeSheet.aspx.cs">
       <DependentUpon>TimeSheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TimeSheet.aspx.designer.cs">
+    <Compile Include="Employee\TimeSheet.aspx.designer.cs">
       <DependentUpon>TimeSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingModule\AddTrainer.aspx.cs">
+      <DependentUpon>AddTrainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingModule\AddTrainer.aspx.designer.cs">
+      <DependentUpon>AddTrainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingModule\AddTrainingList.aspx.cs">
+      <DependentUpon>AddTrainingList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingModule\AddTrainingList.aspx.designer.cs">
+      <DependentUpon>AddTrainingList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingModule\AddTrainingType.aspx.cs">
+      <DependentUpon>AddTrainingType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingModule\AddTrainingType.aspx.designer.cs">
+      <DependentUpon>AddTrainingType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrainingModule\TrainingPage.aspx.cs">
+      <DependentUpon>TrainingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrainingModule\TrainingPage.aspx.designer.cs">
+      <DependentUpon>TrainingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateEmpDetails.aspx.cs">
       <DependentUpon>UpdateEmpDetails.aspx</DependentUpon>
@@ -278,11 +392,11 @@
     <Compile Include="ViewActiveDept.aspx.designer.cs">
       <DependentUpon>ViewActiveDept.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewEmpdetails.aspx.cs">
+    <Compile Include="Employee\ViewEmpdetails.aspx.cs">
       <DependentUpon>ViewEmpdetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewEmpdetails.aspx.designer.cs">
+    <Compile Include="Employee\ViewEmpdetails.aspx.designer.cs">
       <DependentUpon>ViewEmpdetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -290,7 +404,10 @@
     <Content Include="Admin\Admin.Master" />
     <Content Include="Employee\Employee.Master" />
     <Content Include="Hr\HR.Master" />
+    <Content Include="Manager\Manager.Master" />
     <None Include="packages.config" />
+    <Content Include="trainerimage\OfferLetter_Maithili Dukhande %282%29.pdf" />
+    <Content Include="trainerimage\RelievingLetter_Maithili Dukhande.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

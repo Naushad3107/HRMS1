@@ -1,20 +1,20 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DeductType.aspx.cs" Inherits="HRMS.Payslips.DeductType" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Hr/HR.Master" AutoEventWireup="true" CodeBehind="DeductType.aspx.cs" Inherits="HRMS.Payslips.DeductType" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-             Deduction Type&nbsp;&nbsp;&nbsp;
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-    <br />
-    <br />
-           <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Save" />
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="container mt-5 pt-4 d-flex justify-content-center align-items-start" style="min-height: 100vh;">
+        <div class="border border-dark rounded shadow p-4 bg-white" style="min-width: 400px;">
+            <h4 class="text-center mb-4">Add Deduction Type</h4>
+
+            <div class="mb-4">
+                Deduction Type
+                <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" />
+            </div>
+
+            <asp:Button ID="Button1" runat="server" Text="Save" CssClass="btn btn-primary w-100" OnClick="Button1_Click" />
         </div>
-    </form>
-</body>
-</html>
+    </div>
+</asp:Content>
