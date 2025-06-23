@@ -75,11 +75,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddDeptForm.aspx" />
+    <Content Include="Admin\Add Designation.aspx" />
     <Content Include="Admin\AddHolidays.aspx" />
     <Content Include="Admin\ViewEmpdetailsAdmin.aspx" />
     <Content Include="AllEmpData.aspx" />
     <Content Include="AppraisalTemplate.aspx" />
     <Content Include="AppraiseEmployee.aspx" />
+    <Content Include="Documents\AddAdminDocument.aspx" />
+    <Content Include="Documents\AddEmployeeDocument.aspx" />
+    <Content Include="Documents\AddMasterDocuments.aspx" />
+    <Content Include="Documents\AdminDocumentList.aspx" />
+    <Content Include="Documents\AdminFileUpload.aspx" />
+    <Content Include="Documents\AdminUploadedDocumentList.aspx" />
+    <Content Include="Documents\EmployeeDocumentList.aspx" />
+    <Content Include="Documents\EmployeeFileUpload.aspx" />
+    <Content Include="Documents\EmployeeUploadedDocumentList.aspx" />
+    <Content Include="Documents\MasterDocuments.aspx" />
+    <Content Include="Documents\MasterDocumentsList.aspx" />
     <Content Include="EmployeePerformanceDashboard.aspx" />
     <Content Include="Employee\ApplyLeave.aspx" />
     <Content Include="Employee\LeaveHistory.aspx" />
@@ -89,6 +101,9 @@
     <Content Include="Images\DefaultDept.jpg" />
     <Content Include="Images\DefaultEmp.jpg" />
     <Content Include="Images\EmpBase.jpg" />
+    <Content Include="LeaveModule\AddEvent.aspx" />
+    <Content Include="LeaveModule\AddEventType.aspx" />
+    <Content Include="LeaveModule\EventList.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="Manager\AddLeaves.aspx" />
     <Content Include="Manager\ApproveLeave.aspx" />
@@ -104,6 +119,8 @@
     <Content Include="Payslips\SalaryCalculation.aspx" />
     <Content Include="PerfmTrackByDept.aspx" />
     <Content Include="Employee\TimeSheet.aspx" />
+    <Content Include="TicketModule\TicketRaise.aspx" />
+    <Content Include="TicketModule\ViewTicket.aspx" />
     <Content Include="trainerimage\temp.txt" />
     <Content Include="trainerimage\WhatsApp Image 2025-06-17 at 3.58.22 PM.jpeg" />
     <Content Include="TrainingModule\AddTrainer.aspx" />
@@ -124,6 +141,13 @@
     </Compile>
     <Compile Include="AddDeptForm.aspx.designer.cs">
       <DependentUpon>AddDeptForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Add Designation.aspx.cs">
+      <DependentUpon>Add Designation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Add Designation.aspx.designer.cs">
+      <DependentUpon>Add Designation.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AddHolidays.aspx.cs">
       <DependentUpon>AddHolidays.aspx</DependentUpon>
@@ -166,6 +190,83 @@
     </Compile>
     <Compile Include="AppraiseEmployee.aspx.designer.cs">
       <DependentUpon>AppraiseEmployee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\AddAdminDocument.aspx.cs">
+      <DependentUpon>AddAdminDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\AddAdminDocument.aspx.designer.cs">
+      <DependentUpon>AddAdminDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\AddEmployeeDocument.aspx.cs">
+      <DependentUpon>AddEmployeeDocument.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\AddEmployeeDocument.aspx.designer.cs">
+      <DependentUpon>AddEmployeeDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\AddMasterDocuments.aspx.cs">
+      <DependentUpon>AddMasterDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\AddMasterDocuments.aspx.designer.cs">
+      <DependentUpon>AddMasterDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\AdminDocumentList.aspx.cs">
+      <DependentUpon>AdminDocumentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\AdminDocumentList.aspx.designer.cs">
+      <DependentUpon>AdminDocumentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\AdminFileUpload.aspx.cs">
+      <DependentUpon>AdminFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\AdminFileUpload.aspx.designer.cs">
+      <DependentUpon>AdminFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\AdminUploadedDocumentList.aspx.cs">
+      <DependentUpon>AdminUploadedDocumentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\AdminUploadedDocumentList.aspx.designer.cs">
+      <DependentUpon>AdminUploadedDocumentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\EmployeeDocumentList.aspx.cs">
+      <DependentUpon>EmployeeDocumentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\EmployeeDocumentList.aspx.designer.cs">
+      <DependentUpon>EmployeeDocumentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\EmployeeFileUpload.aspx.cs">
+      <DependentUpon>EmployeeFileUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\EmployeeFileUpload.aspx.designer.cs">
+      <DependentUpon>EmployeeFileUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\EmployeeUploadedDocumentList.aspx.cs">
+      <DependentUpon>EmployeeUploadedDocumentList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\EmployeeUploadedDocumentList.aspx.designer.cs">
+      <DependentUpon>EmployeeUploadedDocumentList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\MasterDocuments.aspx.cs">
+      <DependentUpon>MasterDocuments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\MasterDocuments.aspx.designer.cs">
+      <DependentUpon>MasterDocuments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Documents\MasterDocumentsList.aspx.cs">
+      <DependentUpon>MasterDocumentsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Documents\MasterDocumentsList.aspx.designer.cs">
+      <DependentUpon>MasterDocumentsList.aspx</DependentUpon>
     </Compile>
     <Compile Include="EmployeePerformanceDashboard.aspx.cs">
       <DependentUpon>EmployeePerformanceDashboard.aspx</DependentUpon>
@@ -222,6 +323,27 @@
     </Compile>
     <Compile Include="Hr\HR.Master.designer.cs">
       <DependentUpon>HR.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveModule\AddEvent.aspx.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveModule\AddEvent.aspx.designer.cs">
+      <DependentUpon>AddEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveModule\AddEventType.aspx.cs">
+      <DependentUpon>AddEventType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveModule\AddEventType.aspx.designer.cs">
+      <DependentUpon>AddEventType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveModule\EventList.aspx.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeaveModule\EventList.aspx.designer.cs">
+      <DependentUpon>EventList.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.aspx.cs">
       <DependentUpon>LoginPage.aspx</DependentUpon>
@@ -349,6 +471,20 @@
     </Compile>
     <Compile Include="Employee\TimeSheet.aspx.designer.cs">
       <DependentUpon>TimeSheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TicketModule\TicketRaise.aspx.cs">
+      <DependentUpon>TicketRaise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TicketModule\TicketRaise.aspx.designer.cs">
+      <DependentUpon>TicketRaise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TicketModule\ViewTicket.aspx.cs">
+      <DependentUpon>ViewTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TicketModule\ViewTicket.aspx.designer.cs">
+      <DependentUpon>ViewTicket.aspx</DependentUpon>
     </Compile>
     <Compile Include="TrainingModule\AddTrainer.aspx.cs">
       <DependentUpon>AddTrainer.aspx</DependentUpon>

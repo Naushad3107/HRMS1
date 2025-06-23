@@ -48,7 +48,6 @@ namespace HRMS.Offer_Relieving
             doc.Add(new Paragraph("Website: www.masstechbusiness.com"));
             doc.Add(new Paragraph("---------------------------------------------------"));
 
-            // Dynamic Offer Letter Content
             doc.Add(new Paragraph($"Date: {DateTime.Now.ToShortDateString()}"));
             doc.Add(new Paragraph("\n"));
             doc.Add(new Paragraph($"To,\n{Name}\n{Address}\n\n"));

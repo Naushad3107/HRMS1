@@ -61,8 +61,8 @@
                                     <li class="dropdown-submenu">
                                         <a class="dropdown-item dropdown">Salary Management</a>
                                         <ul class="dropdown-submenu">
-                                            <li><a class="dropdown-item" href="../Payslips/AddDeduction.aspx">Add deduction type</a></li>
-                                            <li><a class="dropdown-item" href="../Payslips/AddEarning.aspx">Add Earning Type</a></li>
+                                            <li><a class="dropdown-item" href="../Payslips/DeductType.aspx">Add deduction type</a></li>
+                                            <li><a class="dropdown-item" href="../Payslips/EarningType.aspx">Add Earning Type</a></li>
                                         </ul>
                                     </li>
                                     <li><a class="dropdown-item" href="../Payslips/PayslipGenerate.aspx">Payslip Generation</a></li>

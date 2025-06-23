@@ -26,5 +26,10 @@ namespace HRMS.Payslips
             SqlCommand cmd = new SqlCommand(q, conn);
             cmd.ExecuteNonQuery();
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Payslips/AddDeduction.aspx");
+        }
     }
 }

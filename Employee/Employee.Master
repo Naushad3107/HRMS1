@@ -38,7 +38,35 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../Employee/TimeSheet.aspx">Time Sheet</a></li>
-             
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Documents" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documents
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../Documents/EmployeeFileUpload.aspx">Employee File Upload</a></li>
+                                    <li><a class="dropdown-item" href="../Documents/EmployeeUploadedDocumentList.aspx">Employee Uploaded Doc</a></li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                </ul>
+                            </li>
+
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-Ticket" role="button" data-bs-toggle="dropdown" aria-expanded="false">Raise Ticket
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../TicketModule/TicketRaise.aspx">Raise Ticket</a></li>
+
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>

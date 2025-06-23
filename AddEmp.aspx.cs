@@ -21,7 +21,7 @@ namespace HRMS
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string name = TextBox1.Text, email = TextBox2.Text, Role = DropDownList1.SelectedValue, Salary = TextBox3.Text, Pass = TextBox4.Text, pan = TextBox5.Text, year = TextBox6.Text, department = TextBox7.Text, designation = TextBox8.Text, phone = TextBox9.Text, status=DropDownList2.SelectedValue ,gender = DropDownList3.SelectedValue ;
+            string name = TextBox1.Text, email = TextBox2.Text, Role = DropDownList1.SelectedValue, Salary = TextBox3.Text, Pass = TextBox4.Text, pan = TextBox5.Text, year = TextBox6.Text, department = DropDownList4.SelectedValue, designation = DropDownList5.SelectedValue, phone = TextBox9.Text, status=DropDownList2.SelectedValue ,gender = DropDownList3.SelectedValue ;
 
 
             string q = $"exec  SaveEmpDetails '{name}','{email}','{Role}','{Salary}','{Pass}','{pan}','{year}','{department}','{designation}','{phone}','{gender}','{status}'";
@@ -43,6 +43,14 @@ namespace HRMS
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("AdminPage.aspx");
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DropDownList1.SelectedValue.Equals("Admin"))
+            {
+                
+            }
         }
     }
 }

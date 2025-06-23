@@ -98,9 +98,9 @@ namespace HRMS.Employee
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@leaveType", leaveType);
 
-            //conn.Open();
+            
             object result = cmd.ExecuteScalar();
-            //conn.Close();
+            
 
             if (result != null)
                 max = Convert.ToInt32(result);

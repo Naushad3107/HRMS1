@@ -55,7 +55,9 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../AddDeptForm.aspx">Add Department</a></li>
-                                    <li><a class="dropdown-item" href="../ViewActiveDept.aspx">View Active Departments</a></li>
+                                    <li><a class="dropdown-item" href="../ViewActiveDept.aspx">View All Departments</a></li>
+
+                                    <li><a class="dropdown-item" href="../Admin/Add Designation.aspx">Add Designation</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -69,7 +71,9 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="../TrainingModule/AddTrainer.aspx">Add New Trainer</a></li>
-                                    <li><a class="dropdown-item" href="../TrainingModule/AddTrainingType.aspx/">Training Type</a></li>
+                                    <li><a class="dropdown-item" href="../TrainingModule/AddTrainingType.aspx">Training Type</a></li>
+                                    <li><a class="dropdown-item" href="../TrainingModule/AddTrainingList.aspx">Training List</a></li>
+                                    <li><a class="dropdown-item" href="../TrainingModule/TrainingPage.aspx">Training Page</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -81,16 +85,65 @@
 
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-EmployeeHoliday" role="button" data-bs-toggle="dropdown" aria-expanded="false">Holidays
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown-EmployeeHoliday" role="button" data-bs-toggle="dropdown" aria-expanded="false">Events
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/Admin/AddHolidays.aspx">Add Holidays</a></li>
-
-                                    
+                                    <li><a class="dropdown-item" href="../LeaveModule/AddEvent.aspx">Add Event</a></li>
+                                    <li><a class="dropdown-item" href="../LeaveModule/AddEventType.aspx">Add Event Type</a></li>
+                                    <li><a class="dropdown-item" href="../LeaveModule/EventList.aspx">Event List</a></li>
 
                                 </ul>
                             </li>
 
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPayslips" role="button" data-bs-toggle="dropdown" aria-expanded="false">Master Documents</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownPayslips">
+
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown">Add Master document</a>
+                                        <ul class="dropdown-submenu">
+                                            <li><a class="dropdown-item" href="../Documents/AddAdminDocument.aspx">Add Admin Document</a></li>
+                                            <li><a class="dropdown-item" href="../Documents/AddEmployeeDocument.aspx">Add Employee Document</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown">Master document List</a>
+                                        <ul class="dropdown-submenu">
+                                            <li><a class="dropdown-item" href="../Documents/AdminDocumentList.aspx">Admin Document List</a></li>
+                                            <li><a class="dropdown-item" href="../Documents/EmployeeDocumentList.aspx">Employee Document List</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPayslips" role="button" data-bs-toggle="dropdown" aria-expanded="false">Documents</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownPayslips">
+
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown">document</a>
+                                        <ul class="dropdown-submenu">
+                                            <li><a class="dropdown-item" href="../Documents/AdminFileUpload.aspx">Admin File Upload</a></li>
+                                            <li><a class="dropdown-item" href="../Documents/AdminUploadedDocumentList.aspx">Admin File Upload List</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item dropdown">Generate Leter</a>
+                                        <ul class="dropdown-submenu">
+                                            <li><a class="dropdown-item" href="../Offer_Relieving_code/GenerateOfferLetter.aspx">Offer Letter</a></li>
+                                            <li><a class="dropdown-item" href="../Offer_Relieving_code/Relieving.aspx">Relieving Leter</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
 
 
 

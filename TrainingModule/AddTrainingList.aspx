@@ -1,63 +1,59 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddTrainingList.aspx.cs" Inherits="HRMS.TrainingModule.AddTrainingList" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Admin/Admin.Master" AutoEventWireup="true" CodeBehind="AddTrainingList.aspx.cs" Inherits="HRMS.TrainingModule.AddTrainingList" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+</asp:Content>
 
-<!DOCTYPE html>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceholder1" runat="server">
+    <div class="container mt-4">
+        <h3 class="mb-4">Add Training List</h3>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
+        <div class="mb-3">
+            <label>Trainer</label>
+            <asp:DropDownList ID="trainernames" runat="server" CssClass="form-select"></asp:DropDownList>
+        </div>
 
-            Add Training List<br />
-            <br />
-            Trainer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="trainernames" runat="server">
-            </asp:DropDownList>
-            <br />
-            <br />
-            Training Type&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="trainingtypes" runat="server">
-            </asp:DropDownList>
-            <br />
-            <br />
-            Employee&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            Training Cost&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtcost" runat="server"></asp:TextBox>
-            <br />
-            <br />
-            Description&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtdes" runat="server" Height="83px" Width="666px"></asp:TextBox>
-            <br />
-            <br />
-            Status&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="Trainingstat" runat="server">
+        <div class="mb-3">
+            <label>Training Type</label>
+            <asp:DropDownList ID="trainingtypes" runat="server" CssClass="form-select"></asp:DropDownList>
+        </div>
+
+        <div class="mb-3">
+            <label>Employee</label>
+            <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Training Cost</label>
+            <asp:TextBox ID="txtcost" runat="server" CssClass="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label>Description</label>
+            <asp:TextBox ID="txtdes" runat="server" TextMode="MultiLine" CssClass="form-control" Rows="4" />
+        </div>
+
+        <div class="mb-3">
+            <label>Status</label>
+            <asp:DropDownList ID="Trainingstat" runat="server" CssClass="form-select">
                 <asp:ListItem>Active</asp:ListItem>
                 <asp:ListItem>Inactive</asp:ListItem>
             </asp:DropDownList>
-            <br />
-            <br />
-            Start Date&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtstartdate" runat="server" TextMode="Date"></asp:TextBox>
-            <br />
-            <br />
-            End Date&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtenddate" runat="server" TextMode="Date"></asp:TextBox>
-            <br />
-            <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Add" />
-
-            <br />
-            <br />
-            
-
         </div>
-    </form>
-</body>
-</html>
 
+        <div class="row">
+            <div class="col-md-6">
+                <label>Start Date</label>
+                <asp:TextBox ID="txtstartdate" runat="server" TextMode="Date" CssClass="form-control" />
+            </div>
+            <div class="col-md-6">
+                <label>End Date</label>
+                <asp:TextBox ID="txtenddate" runat="server" TextMode="Date" CssClass="form-control" />
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" OnClick="Button1_Click" Text="Add" />
+        </div>
+    </div>
+</asp:Content>

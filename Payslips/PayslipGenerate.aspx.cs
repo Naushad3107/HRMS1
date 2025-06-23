@@ -96,7 +96,7 @@ namespace HRMS.Payslips
             }
             using (MemoryStream ms = new MemoryStream())
             {
-                string folderPath = Server.MapPath("~/GeneratePayslip");
+                string folderPath = Server.MapPath("~/HRMS/GeneratePayslip/");
                 if (!Directory.Exists(folderPath))
                     Directory.CreateDirectory(folderPath);
 
